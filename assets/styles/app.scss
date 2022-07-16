@@ -1,3 +1,24 @@
+// font-family: 'Albert Sans', sans-serif;
+$baseline: 2em;
+
 body {
+    margin: 0;
     background-color: lightgray;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+header {
+    padding: $baseline;
+    background: lightblue;
+    font-size: 400;
+}
+
+h2 {
+    color: red;
+}
+
+footer {
+    background: lightblue;
+    padding: $baseline;
 }
