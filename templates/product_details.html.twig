@@ -16,6 +16,14 @@
 		</div>
 		<h1>{{ bike.name }}</h1>
 		<p>£{{ bike.price }}</p>
+
+		<form method='post'>
+			{% if inBasket %}
+				<button disabled>Add to basket</button>
+			{% else %}
+				<button>Add to basket</button>
+			{% endif %}
+		</form>
 	</div>
 
 	{% if bike.description %}

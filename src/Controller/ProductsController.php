@@ -32,6 +32,6 @@ class ProductsController extends AbstractController {
             throw $this->createNotFoundException('This product does not exists');
         }
 
-        return $this->render('product_details.html.twig', ['bike' => $bike]);
+        return $this->render('product_details.html.twig', ['bike' => $bike, 'inBasket' => false]);
     }
 }
